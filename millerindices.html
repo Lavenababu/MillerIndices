@@ -230,8 +230,6 @@ hkl(h,k,l);
       </div>
 </div>
 <div id='CanDivEl'><canvas style="width:100%;height:350px;clear:both;"></canvas></div>
-<div id="informadiv">
-	<font face="times new roman" size="3">Orientation of a crystal plane in a lattice is specified by <i>Miller Indices. </i>These are denoted as h,k &amp; l (the plane is denoted as (hkl) ). These are defined as the reciprocal of the intercepts by the plane on the axes. This is an online tool to visualise a plane associated with a specific set of miller indices. This tool also features visualisation of plane in specific lattice structures like Simple Cubic, Body Centered or Face Centered cubic lattice structure. By default none is selected.<br><i>Thank you <b>Roger Milla Fortunato Santos</b> for improving this tool with your valuable suggestion.</i></font></div>    
 
 <script>
 var model; 
@@ -255,6 +253,7 @@ var atomX,atomY,atomZ,atomRad;
     var ymax = -Infinity;
     var zmin = Infinity;
     var zmax = -Infinity;
+
     for (var i = 0; i < geometry.vertices.length; i++) {
         var v = geometry.vertices[i];
         if (v.x < xmin)
@@ -701,29 +700,29 @@ return hdfn;
 }
 
 
-var Math2 = {
-    min: function(values) {
-        return this.calculate(values, Math.min);
-    },
-    max: function(values) {
-        return this.calculate(values, Math.max);
-    },
-    calculate: function(values, operation) {
-        if(values.length == 0) {
-            return NaN;
-        } else if(values.length == 1) {
-            var val = values.pop();
-            if ( typeof val == "number" ) {
-                return val;
-            } else {
-                return NaN;
-            }
-        } else {
-            var val = values.pop();
-            return operation(val, this.calculate(values, operation))
-        }
-    }
-}
+// var Math2 = {
+//     min: function(values) {
+//         return this.calculate(values, Math.min);
+//     },
+//     max: function(values) {
+//         return this.calculate(values, Math.max);
+//     },
+//     calculate: function(values, operation) {
+//         if(values.length == 0) {
+//             return NaN;
+//         } else if(values.length == 1) {
+//             var val = values.pop();
+//             if ( typeof val == "number" ) {
+//                 return val;
+//             } else {
+//                 return NaN;
+//             }
+//         } else {
+//             var val = values.pop();
+//             return operation(val, this.calculate(values, operation))
+//         }
+//     }
+// }
 
 
 
@@ -802,8 +801,6 @@ try {init();} catch(err){}
 try {init();} catch(err){}
 </script>    </div>
 
-          <footer>
-              </footer>
     
         </div>
 
