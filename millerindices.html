@@ -303,7 +303,7 @@ function adv(geometry, materials) {
 
     /* create the object from the geometry and materials that were loaded.  There
        can be multiple materials, which can be applied to the object using MeshFaceMaterials.
-       Note tha the material can include references to texture images might finish
+       Note that the material can include references to texture images might finish
        loading later. */
        
     var object = new THREE.Mesh(geometry, new THREE.MeshFaceMaterial(materials));
@@ -539,7 +539,7 @@ document.getElementById('CanDivEl').innerHTML="<canvas style='width:100%;height:
   
   var control = new THREE.OrbitControls(camera,canv);
 
-installModel("cube.json",'#FFFFFF');
+installModel("cube.json",'#000000');
 
 var light = new THREE.AmbientLight( 0x513030); // soft white light
 scene.add( light );
