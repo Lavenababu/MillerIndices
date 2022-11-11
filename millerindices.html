@@ -1,0 +1,1965 @@
+
+<!DOCTYPE html>
+<html  lang="en" dir="ltr"
+  xmlns:fb="http://ogp.me/ns/fb#"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:article="http://ogp.me/ns/article#"
+  xmlns:book="http://ogp.me/ns/book#"
+  xmlns:profile="http://ogp.me/ns/profile#"
+  xmlns:video="http://ogp.me/ns/video#"
+  xmlns:product="http://ogp.me/ns/product#">
+<head>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://calistry.org/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="generator" content="Drupal 7 (https://www.drupal.org)" />
+<link rel="canonical" href="http://calistry.org/calculate/latticePlanesMillerIndices" />
+<link rel="shortlink" href="http://calistry.org/node/177" />
+<meta property="og:site_name" content="Calistry" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Miller Indices visualizer :Lattice Plane" />
+<meta property="og:url" content="http://calistry.org/calculate/latticePlanesMillerIndices" />
+<meta property="og:updated_time" content="2020-02-27T07:44:52+02:00" />
+<meta property="og:image" content="http://calistry.org/CalistryFB.png" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:url" content="http://calistry.org/calculate/latticePlanesMillerIndices" />
+<meta name="twitter:title" content="Miller Indices visualizer :Lattice Plane" />
+<meta property="article:published_time" content="2015-04-03T10:12:09+03:00" />
+<meta property="article:modified_time" content="2020-02-27T07:44:52+02:00" />
+<meta itemprop="name" content="Miller Indices visualizer :Lattice Plane" />
+<meta name="dcterms.title" content="Miller Indices visualizer :Lattice Plane" />
+<meta name="dcterms.creator" content="arkajitmandal" />
+<meta name="dcterms.date" content="2015-04-03T10:12+03:00" />
+<meta name="dcterms.type" content="Text" />
+<meta name="dcterms.format" content="text/html" />
+<meta name="dcterms.identifier" content="http://calistry.org/calculate/latticePlanesMillerIndices" />
+<meta name="dcterms.language" content="en" />
+
+  <title>Miller Indices visualizer :Lattice Plane | Calistry</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta class="viewport" name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style type="text/css" media="all">
+@import url("http://calistry.org/modules/system/system.base.css?penoy7");
+@import url("http://calistry.org/modules/system/system.messages.css?penoy7");
+</style>
+<style type="text/css" media="all">
+@import url("http://calistry.org/modules/aggregator/aggregator.css?penoy7");
+@import url("http://calistry.org/modules/comment/comment.css?penoy7");
+@import url("http://calistry.org/sites/all/modules/date/date_api/date.css?penoy7");
+@import url("http://calistry.org/sites/all/modules/date/date_popup/themes/datepicker.1.7.css?penoy7");
+@import url("http://calistry.org/sites/all/modules/date/date_repeat_field/date_repeat_field.css?penoy7");
+@import url("http://calistry.org/modules/field/theme/field.css?penoy7");
+@import url("http://calistry.org/modules/node/node.css?penoy7");
+@import url("http://calistry.org/modules/poll/poll.css?penoy7");
+@import url("http://calistry.org/sites/all/modules/ubercart/uc_store/uc_store.css?penoy7");
+@import url("http://calistry.org/modules/user/user.css?penoy7");
+@import url("http://calistry.org/modules/forum/forum.css?penoy7");
+@import url("http://calistry.org/sites/all/modules/views/css/views.css?penoy7");
+</style>
+<style type="text/css" media="all">
+@import url("http://calistry.org/sites/all/modules/pace/css/pace-theme-loading-bar.css?penoy7");
+@import url("http://calistry.org/sites/all/modules/ctools/css/ctools.css?penoy7");
+</style>
+<style type="text/css" media="all">
+@import url("http://calistry.org/sites/all/themes/progressive/css/buttons/social-icons.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/buttons/buttons.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/font-awesome.min.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/bootstrap.min.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/jslider.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/settings.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/jquery.fancybox.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/animate_progressive.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/video-js.min.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/morris.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/ladda.min.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/style.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/responsive.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/customizer/pages.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/drupal.css?penoy7");
+@import url("http://calistry.org/sites/all/themes/progressive/css/ie/ie.css?penoy7");
+</style>
+<style type="text/css" media="all">
+@import url("http://calistry.org/sites/all/themes/progressive/css/customizer/pages-pages-customizer.css?penoy7");
+@import url("http://calistry.org/sites/default/files/cpn/calculator.css?penoy7");
+@import url("http://calistry.org/sites/default/files/cpn/block-9.css?penoy7");
+@import url("http://calistry.org/sites/default/files/cpn/block-10.css?penoy7");
+</style>
+
+</head>
+<body class="fixed-header html not-front not-logged-in no-sidebars page-node page-node- page-node-177 node-type-calculator">
+
+<div class="page-box"><div class="page-box-content">
+  <div class="main" role="main">    
+      <div  style="padding-top: 0px; padding-bottom: 0px; " class="nd-region">  
+
+      <div class = "container-fluid">
+
+        <div  id="Header" class="row">                                    
+                                          <div  class="col-md-12 " id="progressive_cms-menu">
+                              
+                                  <div id="block-progressive-cms-menu" class="widget block block-progressive-cms" >
+     
+  <div class = "block-content clearfix">
+    
+<header class="header header-two">
+  <div class = "header-wrapper">
+    <div class="container">
+      <div class="row">
+        
+        <div class="col-xs-6 col-md-10 col-lg-9 right-box">
+        <div class="right-box-wrapper">
+          <div class="header-icons">
+
+            <div class="phone-header hidden-600">
+
+
+              </a>
+            </div>
+
+                </div>
+                                                  </div><!-- .header-icons -->
+          
+          <div class="primary">
+          <div class="navbar navbar-default" role="navigation">
+            <button type="button" class="navbar-toggle btn-navbar collapsed" data-toggle="collapse" data-target=".primary .navbar-collapse">
+              <span class="text">Menu</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+      
+            <nav class="collapse collapsing navbar-collapse">
+              <ul class="nav navbar-nav navbar-center">
+                <li class="tb-megamenu-item level-1 mega">
+  <a href="/" class="">
+        
+    Home      </a>
+  </li>
+
+<li class="tb-megamenu-item level-1 mega dropdown parent">
+  <a href="/Physical-Chemistry-Calculators" class="">
+        
+    Physical Chemistry      </a>
+  <ul  data-class="" data-width="250" style="width: 250px;" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-10" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-1 items-9">
+  <li class="tb-megamenu-item level-2 mega dropdown-submenu parent">
+  <a href="/Liquid-State" class="">
+        
+    Liquid State          <span style="float:right;margin-right:22px" class="badge badge-info">4</span>      </a>
+  <ul  data-class="" data-width="280" style="width: 280px;" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-1" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-4">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/stokesLawCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Stoke's Law of Viscosity      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/reynoldsNumber" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Reynolds Number      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/eotvosRule" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Eotvos Ramsay-Shield relation      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/young-laplace-equation-calculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Young-Laplace Equation      </a>
+  </li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-2 mega dropdown-submenu parent">
+  <a href="/Gas-Laws" class="">
+        
+    Gas Laws          <span style="float:right;margin-right:22px" class="badge badge-info">10</span>      </a>
+  <ul  data-class="" data-width="240" style="width: 240px;" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-2" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-10">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/idealGasLawCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Ideal Gas Law      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/gayLussacsLawCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Gay Lussac's Law      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/dietericiCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Dieterici Equation      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/criticalVolumeCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Critical Volume      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/criticalTemperatureCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Critical Temperature      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/compressibilityFactorZCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Compressibility Factor      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/combinedGasLaw" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Combined Gas Law      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/charlesLawCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Charles's law      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/boylesLawCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Boyle's Law      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/vanDerWaalsCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Van Der Waals Equation      </a>
+  </li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-2 mega mega-align-left dropdown-submenu parent">
+  <a href="/Kinetic-Theory-of-Gas" class="">
+        
+    Kinetic Theory of Gas          <span style="float:right;margin-right:22px" class="badge badge-info">4</span>      </a>
+  <ul  data-class="" data-width="300" style="width: 300px;" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-3" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-4">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/energyOfNonLinearMoleculeCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Energy of Polyatomic Gas (Non-Linear)      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/energyOfLinearMoleculeCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Energy of Polyatomic Gas (Linear)      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/collisionFrequencyCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Collision Frequency of a gas      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/kineticTheoryVelocityCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    RMS, median and mean Velocity of Gas      </a>
+  </li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-2 mega dropdown-submenu parent">
+  <a href="/Thermodynamics" class="">
+        
+    Thermodynamics          <span style="float:right;margin-right:22px" class="badge badge-info">13</span>      </a>
+  <ul  data-class="" data-width="300" style="width: 300px;" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-4" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-13">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/workdoneReversibleChangeCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Workdone in Reversible expansion      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/standard-Free-Energy-Change" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Standard Free Energy Change & Keq      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/specificHeatCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Specific Heat      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/phase-rule-calculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Phase Rule      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/entropyChangeCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Isothermal Entropy Change      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/internalEnergyChangeCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Internal Energy Change      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/enthalpyChageCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Heat of Reaction at constant Volume      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/gibbsEnergy" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Gibb's Free Energy,  Entropy & Enthalpy      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/enthalpyChangeConstantPressure" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Enthalpy Change & Cp at Constant P      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/clausiusClapeyronCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Clausius Clapeyron Equation      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/thermalEfficiencyCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Carnot Thermal Efficiency      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/boltzmannEntropy" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Boltzmann's Entropy      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/enthalpyChangeInternalEnergyConstantPressure" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    ΔH , ΔU and ΔV at constant P      </a>
+  </li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-2 mega dropdown-submenu parent">
+  <a href="/Spectroscopy" class="">
+        
+    Spectroscopy          <span style="float:right;margin-right:22px" class="badge badge-info">7</span>      </a>
+  <ul  data-class="" data-width="300" style="width: 300px;" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-5" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-7">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/rotationalEnergyLevelsPopulation" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Population at rot. energy states      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/beerLambertLawIntensity" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Intensity and Absorbance      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/beerLambertLawAbsorbance" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Beer-Lambert Law :c, l & A      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/beerLambertLawTransmittance" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Beer-Lambert Law : c,l &T      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/rotationalEnergyLevelsRigidLinearMolecule" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Allowed rot. energy level      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/massFragment" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Mass Spectroscopy Fragment Finder      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/DBEcalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Double bond equivalent      </a>
+  </li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-2 mega dropdown-submenu parent">
+  <a href="/Colligative-Property" class="">
+        
+    Colligative Property          <span style="float:right;margin-right:22px" class="badge badge-info">7</span>      </a>
+  <ul  data-class="" data-width="300" style="width: 300px;" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-6" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-7">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/vantHoffOsmoticPressure" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Vant Hoff equation of Osmotic Pressure      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/freezingPointDepressionCoeff" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Freezing Point Depression Coefficient      </a>
+  </li>
+
+
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-2 mega dropdown-submenu parent">
+  <a href="/Quantum-Mechanics" class="">
+        
+    Quantum Mechanics          <span style="float:right;margin-right:22px" class="badge badge-info">3</span>      </a>
+  <ul  data-class="" data-width="" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-7" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-3">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/deBroglieEquation" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    De Broglie Wavelength      </a>
+  </li>
+
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-2 mega dropdown-submenu parent">
+  <a href="/electrochemistry" class="">
+        
+    Electrochemistry          <span style="float:right;margin-right:22px" class="badge badge-info">7</span>      </a>
+  <ul  data-class="" data-width="250" style="width: 250px;" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-8" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-7">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/kohlrauschLawCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Kohlrausch’s law      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/nernstEquation" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Nernst Equation Calculator      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/faradayLawElectrolysis" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Faraday's Law of Electrolysis      </a>
+  </li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-2 mega dropdown-submenu parent">
+  <a href="/kinetics" class="">
+        
+    Rate & diffusion          <span style="float:right;margin-right:22px" class="badge badge-info">5</span>      </a>
+  <ul  data-class="" data-width="260" style="width: 260px;" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-9" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-5">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/michaelis-menten-Equation" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Michaelis-Menten Equation      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/Langmuir-Isotherm-Calculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Langmuir Isotherm      </a>
+  </li>
+
+
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-1 mega mega-align-center dropdown active active-trail parent">
+  <a href="/inorganic-chemistry" class="active-trail">
+        
+    Inorganic Chemistry      </a>
+  <ul  data-class="" data-width="" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-19" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-1 items-8">
+  <li class="tb-megamenu-item level-2 mega dropdown-submenu parent">
+  <a href="/stoichiometry" class="">
+        
+    Stoichiometry          <span style="float:right;margin-right:22px" class="badge badge-info">8</span>      </a>
+  <ul  data-class="" data-width="250" style="width: 250px;" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-11" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-8">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/balanceChemicalEquation" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Chemical equation balancer      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/dilution" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Dilution      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/molarityCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Molarity      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/molecular-Weight-Calculate" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Molecular Weight          <span class="item-new">Viz</span>      </a>
+  </li>
+
+
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-2 mega dropdown-submenu parent">
+  <a href="/Reaction" class="">
+        
+    Reaction          <span style="float:right;margin-right:22px" class="badge badge-info">2</span>      </a>
+  <ul  data-class="" data-width="250" style="width: 250px;" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-12" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-2">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/doubleReplacement" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Double Replacement Reaction      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/singleReplacement" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Single displacement reaction      </a>
+  </li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-2 mega dropdown-submenu parent">
+  <a href="/Radioactivity" class="">
+        
+    Radioactivity          <span style="float:right;margin-right:22px" class="badge badge-info">5</span>      </a>
+  <ul  data-class="" data-width="300" style="width: 300px;" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-13" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-5">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/radioactiveDecayConstantCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Decay Constant      </a>
+  </li>
+
+
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-2 mega dropdown-submenu parent">
+  <a href="/magnetochemistry" class="">
+        
+    Magnetochemistry          <span style="float:right;margin-right:22px" class="badge badge-info">2</span>      </a>
+  <ul  data-class="" data-width="250" style="width: 250px;" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-14" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-2">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/curieEquationCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Curie's law      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/spinOnlyMagneticMoment" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Magnetic Moment (Spin Only)      </a>
+  </li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-2 mega dropdown-submenu parent">
+  <a href="/electronegativity" class="">
+        
+    Electronegativity          <span style="float:right;margin-right:22px" class="badge badge-info">2</span>      </a>
+  <ul  data-class="" data-width="" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-15" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-2">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/mullikenScaleElectronegativityCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Mulliken scale      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/paulingScaleElectronegativityCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Pauling scale      </a>
+  </li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-2 mega dropdown-submenu parent">
+  <a href="/atom-spectra" class="">
+        
+    Atom & Spectra          <span style="float:right;margin-right:22px" class="badge badge-info">3</span>      </a>
+  <ul  data-class="" data-width="230" style="width: 230px;" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-16" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-3">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/rydbergEquation" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Rydberg Equation      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/slaterRuleCalculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Slater's Rule          <span class="item-new">Viz</span>      </a>
+  </li>
+
+<li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/wavelengthVisibleSpectrum" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Visible spectrum          <span class="item-new">Viz</span>      </a>
+  </li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-2 mega dropdown-submenu parent">
+  <a href="/acids-bases" class="">
+        
+    Acids and Bases          <span style="float:right;margin-right:22px" class="badge badge-info">6</span>      </a>
+  <ul  data-class="" data-width="270" style="width: 270px;" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-17" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-6">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/ph-buffer-Henderson-Hasselbalch" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    pH of a Buffer      </a>
+  </li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-2 mega dropdown-submenu active active-trail parent">
+  <a href="/solid-state" class="active-trail">
+        
+    Solid State          <span style="float:right;margin-right:22px" class="badge badge-info">9</span>      </a>
+  <ul  data-class="" data-width="290" style="width: 290px;" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-18" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-2 items-9">
+  <li class="tb-megamenu-item level-3 mega">
+  <a href="/calculate/bornLandeEquation" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Borne Lande Equation      </a>
+  </li>
+
+
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+
+<li class="tb-megamenu-item level-1 mega dropdown parent">
+  <a href="/Computational-Chemistry-calculators" class="">
+        
+    Computational Chemistry      </a>
+  <ul  data-class="" data-width="" class="sub row tb-megamenu-submenu dropdown-menu mega-dropdown-menu nav-child">
+  <li  data-class="" data-width="12" data-hidewcol="0" id="tb-megamenu-column-20" class="tb-megamenu-column megamenu-column-single  mega-col-nav">
+  <ul  class="tb-megamenu-subnav mega-nav level-1 items-4">
+  <li class="tb-megamenu-item level-2 mega">
+  <a href="/calculate/lview-lammps-dump-file-visualiser" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Lview          <span class="item-new">Viz</span>      </a>
+  </li>
+
+<li class="tb-megamenu-item level-2 mega">
+  <a href="/calculate/isoelectric-point-calculator" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Isoelectric point      </a>
+  </li>
+
+<li class="tb-megamenu-item level-2 mega">
+  <a href="/calculate/groview-gromacs-gro-file-viewer" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    Groview          <span class="item-new">Viz</span>      </a>
+  </li>
+
+<li class="tb-megamenu-item level-2 mega">
+  <a href="/calculate/xyzviewer" class="">
+          <i class="fa fa fa-lightbulb-o"></i>
+        
+    XYZviewer          <span class="item-new">Viz</span>      </a>
+  </li>
+</ul>
+</li>
+</ul>
+</li>
+              </ul>
+            </nav>
+          </div>
+          </div><!-- .primary -->
+        </div>
+        </div>
+        
+        <div class="phone-active col-sm-9 col-md-9">
+          <a href="#" class="close"><span>close</span>×</a>
+                    <span class="title">Mail Us: </span> <strong>admin@calistry.org</strong>
+        </div>
+        <div class="search-active col-sm-9 col-md-9">
+          <a href="#" class="close"><span>close</span>×</a>
+          <form action="/calculate/latticePlanesMillerIndices" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-type-textfield form-item-search-block-form form-item form-group">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." placeholder="Search here" class="search-string form-control form-text" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
+</div>
+<button class="search-submit">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+        <path fill="#231F20" d="M12.001,10l-0.5,0.5l-0.79-0.79c0.806-1.021,1.29-2.308,1.29-3.71c0-3.313-2.687-6-6-6C2.687,0,0,2.687,0,6
+        s2.687,6,6,6c1.402,0,2.688-0.484,3.71-1.29l0.79,0.79l-0.5,0.5l4,4l2-2L12.001,10z M6,10c-2.206,0-4-1.794-4-4s1.794-4,4-4
+        s4,1.794,4,4S8.206,10,6,10z"></path>
+        <image src="img/png-icons/search-icon.png" alt="" width="16" height="16" style="vertical-align: top;">
+      </image></svg>
+      </button><div class="form-actions form-wrapper" id="edit-actions"><input class="btn form-submit" type="submit" id="edit-submit" name="op" value="Search" /></div><input type="hidden" name="form_build_id" value="form-kGQEb_Y85hktP-5HVfIWCS5eLaKmiDXVXS4UbDO2mf4" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>        </div>
+      </div><!--.row -->
+    </div>
+  </div>
+</header><!-- .header -->  </div>
+
+  </div> <!-- /.block -->
+                
+                              </div>
+                                    
+          
+                                          <div  class="col-md-12 " id="progressive_cms-breadcrumbs">
+                              
+                                  <div id="block-progressive-cms-breadcrumbs" class="widget block block-progressive-cms" >
+  
+        
+  <div class = "block-content clearfix">
+    <div class="breadcrumb-box">
+  <div class="container">
+    <ul class="breadcrumb">
+          <li><a href="/">Home</a></li>
+          <li><a href="/inorganic-chemistry" title="">Inorganic Chemistry</a></li>
+          <li><a href="/solid-state" title="">Solid State</a></li>
+          <li>Lattice Plane</li>
+        </ul> 
+  </div>
+</div><!-- .breadcrumb-box -->  </div>
+
+  </div> <!-- /.block -->
+                
+                              </div>
+                                    
+          
+                                          <d  id="top" class="col-md-12 ">
+                              
+                                  <div id="block-block-18" class="widget block block-block" >
+  
+        
+  <div class = "block-content clearfix">
+    <div  class = 'content-block full-width-box'><div class="fwb-bg fwb-paralax"  data-stellar-background-ratio = '0.5' style = 'background-image: url("http://calistry.org/sites/default/files/back.jpg");'></div>
+<br><br><br><br>
+</div>
+   </div>
+
+  </div> <!-- /.block -->
+                
+                              </d>
+                                    
+          
+                                          <div  class="col-md-12 " id="progressive_cms-page_title" style="padding-top: 80px; ">
+                              
+                                  <div id="block-progressive-cms-page-title" class="widget block block-progressive-cms" >
+  
+        
+  <div class = "block-content clearfix">
+    <header class="page-header">
+  <div class="container">
+    <h1 class="title">Miller Indices visualizer :Lattice Plane</h1>
+  </div>  
+</header>  </div>
+
+  </div> <!-- /.block -->
+                
+                              </div>
+                                    
+          
+        </div>
+
+      </div>
+
+    
+      </div>
+    
+
+
+      <div  class="nd-region">
+  
+       
+
+      <div class = "container">
+
+        <div  id="Content" class="row">     
+
+          
+                                          <div  id="content" class="col-md-9 ">
+                              
+                                  <div id="block-system-main" class="widget block block-system" >
+  
+        
+  <div class = "block-content clearfix">
+          <h2 class = "hidden">Miller Indices visualizer :Lattice Plane</h2>
+    
+    
+    <div class="content clearfix node-calculator">
+      <p style="text-align: center;"><img alt="" class="media-image img__fid__218 img__view_mode__default attr__format__default attr__field_file_image_alt_text[und][0][value]__ attr__field_file_image_title_text[und][0][value]__" src="http://calistry.org/New/sites/default/files/solid_0.png"><img align="middle" alt="begin mathsize 48px style left parenthesis h k l right parenthesis end style" class="Wirisformula" data-mathml="«math style=¨font-family:`Times New Roman`¨ xmlns=¨http://www.w3.org/1998/Math/MathML¨»«mstyle mathsize=¨48px¨»«mo»(«/mo»«mi»h«/mi»«mi»k«/mi»«mi»l«/mi»«mo»)«/mo»«/mstyle»«/math»" src="/New/sites/all/libraries/ckeditor//plugins/ckeditor_wiris/integration/showimage.php?formula=9669fac7bb607345159cc6b842d24f60.png"></p>
+<p style="text-align: center;"><span style="font-size:16px;"><span style="font-family:times new roman,times,serif;">h , k , l= Miller Indices ; &nbsp; &nbsp;</span></span></p>
+      <script type="text/javascript" src="http://calistry.org/THREE/js/three/three.js"></script><script type="text/javascript" src="http://calistry.org/THREE/js/three/examples/controls/OrbitControls.js"></script><script type="text/javascript">
+function goPlane(){
+h=document.getElementById('valueH').value;
+k=document.getElementById('valueK').value;
+l=document.getElementById('valueL').value;
+if (h==0 && k==0 && l==0){
+document.getElementById('valueH').className='WrongInput';
+document.getElementById('valueK').className='WrongInput';
+document.getElementById('valueL').className='WrongInput';
+removePlane();
+}
+else{
+document.getElementById('valueH').className='calculatorinput';
+document.getElementById('valueK').className='calculatorinput';
+document.getElementById('valueL').className='calculatorinput';
+removePlane();
+hkl(h,k,l);
+
+}
+
+}
+
+
+</script>
+<div id='allcontgrols' style='float:left;'>
+	<label for="valueH" style="
+    float: left;
+    padding-top: 10px;
+    padding-right: 8px;
+"><span style="font-weight: normal;"><font face="times new roman" size="5">h : </font></span></label><input class="calculatorinput" id="valueL" onchange="goPlane()" style="width:50px;float:left" type="number" value="0"><label for="valueK" style="
+    float: left;
+    padding-top: 10px;
+    padding-right: 8px;
+"> <span style="font-weight: normal;"><font face="times new roman" size="5">&nbsp;&nbsp;k : </font></span></label> <input class="calculatorinput" id="valueH" onchange="goPlane()" style="width:50px;float:left" type="number" value="0"> <label for="valueL" style="
+    float: left;
+    padding-top: 10px;
+    padding-right: 8px;
+"> <span style="font-weight: normal;"><font face="times new roman" size="5">&nbsp;&nbsp;l : </font></span></label><input class="calculatorinput" id="valueK" onchange="goPlane()" style="width:50px;float:left" type="number" value="0"></div>
+
+<div id='allcontgrolss' style='float:left;'>
+      <div style="float: left;margin-left:40px">
+         <input checked="checked" name="editList" onclick="removeLat()" style="width: 2em;height: 2em;" type="radio" value="none">
+         <span style="font-weight: normal;"> none </span>
+      </div>
+      <div style="float: left;margin-left:40px">
+         <input name="editList" onclick="sc()" style="margin-left:0px;width: 2em;height: 2em;" type="radio" value="sc"> 
+	 <span style="font-weight: normal;">Simple Cubic</span>
+      </div>
+      <div style="float: left;margin-left:40px">
+	  <input name="editList" onclick="bcc()" style="margin-left:0px;width: 2em;height: 2em;" type="radio" value="fcc"> 
+          <span style="font-weight: normal;"> Body Centered</span>
+      </div>
+      <div style="float: left;margin-left:40px">
+          <input name="editList" onclick="fcc()" style="margin-left:0px;width: 2em;height: 2em;" type="radio" value="bcc"> 
+          <span style="font-weight: normal;"> Face Centered</span>
+      </div>
+</div>
+<div id='CanDivEl'><canvas style="width:100%;height:350px;clear:both;"></canvas></div>
+<div id="informadiv">
+	<font face="times new roman" size="3">Orientation of a crystal plane in a lattice is specified by <i>Miller Indices. </i>These are denoted as h,k &amp; l (the plane is denoted as (hkl) ). These are defined as the reciprocal of the intercepts by the plane on the axes. This is an online tool to visualise a plane associated with a specific set of miller indices. This tool also features visualisation of plane in specific lattice structures like Simple Cubic, Body Centered or Face Centered cubic lattice structure. By default none is selected.<br><i>Thank you <b>Roger Milla Fortunato Santos</b> for improving this tool with your valuable suggestion.</i></font></div>    
+
+<script>
+var model; 
+var renderer,scene,camera; 
+var atomX,atomY,atomZ,atomRad;
+
+ function modelLoadedCallback(geometry, materials) {
+
+    /* create the object from the geometry and materials that were loaded.  There
+       can be multiple materials, which can be applied to the object using MeshFaceMaterials.
+       Note tha the material can include references to texture images might finish
+       loading later. */
+       
+    var object = new THREE.Mesh(geometry, new THREE.MeshFaceMaterial(materials));
+
+    /* Determine the ranges of x, y, and z in the vertices of the geometry. */
+
+    var xmin = Infinity;
+    var xmax = -Infinity;
+    var ymin = Infinity;
+    var ymax = -Infinity;
+    var zmin = Infinity;
+    var zmax = -Infinity;
+    for (var i = 0; i < geometry.vertices.length; i++) {
+        var v = geometry.vertices[i];
+        if (v.x < xmin)
+            xmin = v.x;
+        else if (v.x > xmax)
+            xmax = v.x;
+        if (v.y < ymin)
+            ymin = v.y;
+        else if (v.y > ymax)
+            ymax = v.y;
+        if (v.z < zmin)
+            zmin = v.z;
+        else if (v.z > zmax)
+            zmax = v.z;
+    }
+    
+    /* translate the center of the object to the origin */
+    var centerX = (xmin+xmax)/2;
+    var centerY = (ymin+ymax)/2; 
+    var centerZ = (zmin+zmax)/2;
+    centerXX =centerX ;
+centerYY = centerY ;
+centerZZ = centerZ ;
+    var max = Math.max(centerX - xmin, xmax - centerX);
+    max = Math.max(max, Math.max(centerY - ymin, ymax - centerY) );
+    max = Math.max(max, Math.max(centerZ - zmin, zmax - centerZ) );
+    var scale = 8;
+    object.position.set( -centerX , -centerY, -centerZ  );
+    console.log("length: " , xmax-xmin);
+
+    console.log("Loading finished, scaling object by " + scale);
+    console.log("Center at ( " + centerX + ", " + centerY + ", " + centerZ + " )");
+    
+    /* Create the wrapper, model, to scale and rotate the object. */
+    
+    model = new THREE.Object3D();
+    model.add(object);
+    model.scale.set(scale,scale,scale);
+    rotateX = rotateY = 0;
+    scene.add(model);
+    render();
+
+}
+
+
+function adv(geometry, materials) {
+
+    /* create the object from the geometry and materials that were loaded.  There
+       can be multiple materials, which can be applied to the object using MeshFaceMaterials.
+       Note tha the material can include references to texture images might finish
+       loading later. */
+       
+    var object = new THREE.Mesh(geometry, new THREE.MeshFaceMaterial(materials));
+
+    /* Determine the ranges of x, y, and z in the vertices of the geometry. */
+
+    var xmin = Infinity;
+    var xmax = -Infinity;
+    var ymin = Infinity;
+    var ymax = -Infinity;
+    var zmin = Infinity;
+    var zmax = -Infinity;
+    for (var i = 0; i < geometry.vertices.length; i++) {
+        var v = geometry.vertices[i];
+        if (v.x < xmin)
+            xmin = v.x;
+        else if (v.x > xmax)
+            xmax = v.x;
+        if (v.y < ymin)
+            ymin = v.y;
+        else if (v.y > ymax)
+            ymax = v.y;
+        if (v.z < zmin)
+            zmin = v.z;
+        else if (v.z > zmax)
+            zmax = v.z;
+    }
+    
+    /* translate the center of the object to the origin */
+    var centerX = (xmin+xmax)/2;
+    var centerY = (ymin+ymax)/2; 
+    var centerZ = (zmin+zmax)/2;
+    centerXX =centerX ;
+centerYY = centerY ;
+centerZZ = centerZ ;
+    var max = Math.max(centerX - xmin, xmax - centerX);
+    max = Math.max(max, Math.max(centerY - ymin, ymax - centerY) );
+    max = Math.max(max, Math.max(centerZ - zmin, zmax - centerZ) );
+    var scale = atomRad;
+    object.position.set( -centerX +atomX, -centerY+atomY, -centerZ +atomZ );
+    console.log("length: " , xmax-xmin);
+
+    console.log("Loading finished, scaling object by " + scale);
+    console.log("Center at ( " + centerX + ", " + centerY + ", " + centerZ + " )");
+    
+    /* Create the wrapper, model, to scale and rotate the object. */
+    
+    model = new THREE.Object3D();
+    model.add(object);
+    model.scale.set(scale,scale,scale);
+    rotateX = rotateY = 0;
+    scene.add(model);
+    render();
+
+}
+
+function render() {
+    renderer.render(scene, camera);
+}
+
+
+
+function TriangleGeometry(location) {
+	var geo = new THREE.Geometry();
+        
+	var h = location[0];
+	var k = location[1];
+        var l = location[2];
+xa=0;ya=0;za=0;
+	if (h<0){
+        
+        xa=     parseInt(Math.abs(h/16)+0.9998)*16    ;       
+        }
+if (k<0){
+      
+        ya=     parseInt(Math.abs(k/16)+0.9998)*16    ;   
+        
+        }
+if (l<0){
+       za=     parseInt(Math.abs(l/16)+0.9998)*16    ;   
+        
+        }
+
+        geo.vertices.push( new THREE.Vector3( h-8.02+xa, 0-8.02+ya, 0-8.02+za ) );
+	geo.vertices.push( new THREE.Vector3( 0-8.02+xa, k-8.02+ya, 0-8.02+za ) );
+	geo.vertices.push( new THREE.Vector3( 0-8.02+xa, 0-8.02+ya, l-8.02+za) );
+	// generate faces
+	
+	geo.faces.push( new THREE.Face3( 0, 1, 2 ) );	
+	return geo;
+}
+function SquareGeometry(location) {
+	var geo = new THREE.Geometry();
+        
+	var h = location[0];
+	var k = location[1];
+        var l = location[2];
+xa=0;ya=0;za=0;
+
+	if (h<0){
+        
+        xa=     parseInt(Math.abs(h/16)+0.9998)*16    ;       
+        }
+if (k<0){
+      
+        ya=     parseInt(Math.abs(k/16)+0.9998)*16    ;   
+        
+        }
+if (l<0){
+       za=     parseInt(Math.abs(l/16)+0.9998)*16    ;   
+        
+        }
+        if (Math.abs(h)==Infinity){
+        geo.vertices.push( new THREE.Vector3( 8+xa, k-8.02+ya, 0-8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( 8+xa, 0-8.02+ya, l-8.02+za ) );
+	geo.vertices.push( new THREE.Vector3( 0-8.02+xa, k-8.02+ya, 0-8.02+za ) );
+	geo.vertices.push( new THREE.Vector3( 0-8.02+xa, 0-8.02+ya, l-8.02+za) );
+	geo.faces.push( new THREE.Face3( 0, 2, 3 ) );
+        geo.faces.push( new THREE.Face3( 1, 3, 0 ) );	
+        }
+        if (Math.abs(k)==Infinity){
+        geo.vertices.push( new THREE.Vector3( h-8.02+xa, 8+ ya, 0-8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( 0-8.02+xa,  8+ya, l-8.02+za ) );       
+        geo.vertices.push( new THREE.Vector3( h-8.02+xa, 0-8.02+ya, 0-8.02+za ) );
+	geo.vertices.push( new THREE.Vector3( 0-8.02+xa, 0-8.02+ya, l-8.02+za) );
+	geo.faces.push( new THREE.Face3( 0, 2, 3 ) );
+        geo.faces.push( new THREE.Face3( 1, 3, 0 ) );	
+        }
+
+        if (Math.abs(l)==Infinity){
+        geo.vertices.push( new THREE.Vector3( h-8.02+xa, 0-8.02+ ya, 8+za ) );
+        geo.vertices.push( new THREE.Vector3( 0-8.02+xa, k-8.02+ ya, 8+za ) );       
+        geo.vertices.push( new THREE.Vector3( h-8.02+xa, 0-8.02+ya, 0-8.02+za ) );
+	geo.vertices.push( new THREE.Vector3( 0-8.02+xa, k-8.02+ya, 0-8.02+za) );
+	geo.faces.push( new THREE.Face3( 0, 2, 3 ) );
+        geo.faces.push( new THREE.Face3( 1, 3, 0 ) );	
+        }
+
+	return geo;
+}
+
+
+function SquareGeo(location) {
+	var geo = new THREE.Geometry();
+        
+	var h = location[0];
+	var k = location[1];
+        var l = location[2];
+xa=0;ya=0;za=0;
+console.log(h,k,l);
+	if (h<0){
+        xa=     parseInt(Math.abs(h/16)+0.9998)*16    ;       
+        if (isNaN(xa)){xa=0}       
+        }
+if (k<0){
+        ya=     parseInt(Math.abs(k/16)+0.9998)*16    ;       
+        if (isNaN(ya)){ya=0}
+        }
+if (l<0){
+        za=     parseInt(Math.abs(l/16)+0.9998)*16    ;       
+
+        if (isNaN(za)){za=0}
+        }
+        if (Math.abs(h)==Infinity && Math.abs(k)==Infinity  ){
+        geo.vertices.push( new THREE.Vector3( -8+xa, -8.0+ya, l-8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( -8+xa, 8.0+ya, l-8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( 8+xa, -8.0+ya, l-8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( 8+xa, 8.0+ya, l-8.02+za ) );
+	geo.faces.push( new THREE.Face3( 0, 2, 3 ) );
+        geo.faces.push( new THREE.Face3( 1, 3, 0 ) );	
+        }
+        if (Math.abs(h)==Infinity && Math.abs(l)==Infinity  ){
+        geo.vertices.push( new THREE.Vector3( -8+xa, k-8.0+ya, -8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( -8+xa, k-8.0+ya, 8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( 8+xa, k-8.0+ya, -8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( 8+xa, k-8.0+ya, 8.02+za ) );
+	geo.faces.push( new THREE.Face3( 0, 2, 3 ) );
+        geo.faces.push( new THREE.Face3( 1, 3, 0 ) );	
+        }
+
+               if (Math.abs(l)==Infinity && Math.abs(k)==Infinity  ){
+        geo.vertices.push( new THREE.Vector3( h-8+xa, -8.0+ya,-8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( h-8+xa, 8.0+ya, -8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( h-8+xa, -8.0+ya, 8.02+za ) );
+        geo.vertices.push( new THREE.Vector3( h-8+xa, 8.0+ya, 8.02+za ) );
+	geo.faces.push( new THREE.Face3( 0, 2, 3 ) );
+        geo.faces.push( new THREE.Face3( 1, 3, 0 ) );	
+        }
+	return geo;
+}
+function installModel(file, bgColor) { 
+    if (model) {
+        scene.remove(model);
+    }
+    renderer.setClearColor(bgColor);
+    render();
+    var loader = new THREE.JSONLoader();
+    loader.load("http://calistry.org/THREE/models-json/" + file, modelLoadedCallback);
+}
+
+function addaModel(file, bgColor) { 
+    renderer.setClearColor(bgColor);
+    render();
+    var loader = new THREE.JSONLoader();
+    loader.load("models-json/" + file,adv);
+
+return true;
+}
+function init() {  
+  var canv = document.getElementsByTagName("canvas")[0];
+  var w = canv.clientWidth;
+  var h = canv.clientHeight;
+try{  renderer = new THREE.WebGLRenderer({canvas:canv}); }
+catch(err){
+document.getElementById('allcontgrolss').innerHTML='';
+document.getElementById('allcontgrols').innerHTML='';
+document.getElementById('CanDivEl').innerHTML="<canvas style='width:100%;height:350px;clear:both;'></canvas>Error! Try refreshing!"}
+  renderer.setSize( w, h );
+  renderer.setClearColor(new THREE.Color(0xeeeeee), 1);
+
+   scene = new THREE.Scene();
+
+   camera = new THREE.PerspectiveCamera(
+      15,     // Field of view
+      w / h,  // Aspect ratio
+      0.1,    // Near
+      10000   // Far
+  );
+  
+  // Camera looks toward negative z with y up
+  camera.position.set( 5, 5, 100 );
+  
+  var control = new THREE.OrbitControls(camera,canv);
+
+installModel("cube.json",'#FFFFFF');
+
+var light = new THREE.AmbientLight( 0x513030); // soft white light
+scene.add( light );
+ var directionalLight = new THREE.DirectionalLight(0xffffff);
+      directionalLight.position.set(1, 3, 1).normalize();
+      scene.add(directionalLight);
+ 
+
+axes = new THREE.AxisHelper( 10 );
+axes.position.set(-7.5,-7.5,-7.5)
+scene.add( axes );
+  var clock = new THREE.Clock();
+  
+  var render = function() {
+    var dt = clock.getDelta();
+    control.update(dt);
+    renderer.render(scene,camera);
+    requestAnimationFrame(render);
+  };
+
+  requestAnimationFrame(render);
+}
+  
+
+
+var plane;
+
+function hkl(h,k,l){
+
+div=Math.max(Math.abs(h),Math.abs(k),Math.abs(l));
+z=16/Math.max(Math.abs(div/h),Math.abs(div/k),Math.abs(div/l));
+if(h==0){z=16/Math.max(Math.abs(div/k),Math.abs(div/l));}
+if(k==0){z=16/Math.max(Math.abs(div/h),Math.abs(div/l));}
+if(l==0){z=16/Math.max(Math.abs(div/h),Math.abs(div/k));}
+if(h==0 && k==0){z=16*l/div;}
+if(l==0 && k==0){z=16*h/div;}
+if(h==0 && l==0){z=16*k/div;}
+//ih=div*z/h;
+ih=16/h;
+ik=16/k;
+il=16/l;
+
+var geo = TriangleGeometry([ih,ik,il]);
+if (h==0||k==0||l==0){
+var geo = SquareGeometry([ih,ik,il]);
+
+}
+if((h==0 && k==0)||(l==0 && k==0)||(h==0 && l==0)){
+var geo = SquareGeo([ih,ik,il]);
+
+}
+
+
+var material = new THREE.MeshBasicMaterial( { color: 0x2facc2, side: THREE.DoubleSide ,opacity: 0.5,transparent:true} );
+plane = new THREE.Mesh( geo, material );
+
+scene.add( plane);
+
+scene.children[scene.children.length-1].rotation.set(rotateX,rotateY,0);
+render();
+
+}
+
+var sphere=[];
+
+function lattice(a,b,c,d){
+
+var material = new THREE.MeshLambertMaterial( { color: 0xcd3333, side: THREE.DoubleSide} );
+sphere.push( new THREE.Mesh(new THREE.SphereGeometry(d, 20, 20), material ));
+
+
+sphere[sphere.length-1].overdraw = true;
+sphere[sphere.length-1].position.set( a , b, c  );
+scene.add(sphere[sphere.length-1]);
+render();
+}
+
+
+function removePlane(){
+scene.remove(plane);
+
+} 
+function removeLat(){
+for (var i=0;i<sphere.length;i=i+1){
+scene.remove(sphere[i]);
+
+} 
+
+}
+
+function sc(){
+removeLat();
+lattice(8,8,8,2);
+lattice(8,8,-8,2);
+lattice(8,-8,8,2);
+lattice(8,-8,-8,2);
+lattice(-8,8,8,2);
+lattice(-8,8,-8,2);
+lattice(-8,-8,8,2);
+lattice(-8,-8,-8,2);
+
+
+}
+
+function bcc(){
+removeLat();
+lattice(8,8,8,2);
+lattice(8,8,-8,2);
+lattice(8,-8,8,2);
+lattice(8,-8,-8,2);
+lattice(-8,8,8,2);
+lattice(-8,8,-8,2);
+lattice(-8,-8,8,2);
+lattice(-8,-8,-8,2);
+
+
+lattice(0,0,0,2);
+}
+
+function fcc(){
+removeLat();
+lattice(8,8,8,2);
+lattice(8,8,-8,2);
+lattice(8,-8,8,2);
+lattice(8,-8,-8,2);
+lattice(-8,8,8,2);
+lattice(-8,8,-8,2);
+lattice(-8,-8,8,2);
+lattice(-8,-8,-8,2);
+
+lattice(0,0,-8,2);
+lattice(0,0,8,2);
+lattice(0,-8,0,2);
+lattice(0,8,0,2);
+lattice(-8,0,0,2);
+lattice(8,0,0,2);
+}
+
+function hdf(numbers){
+var num=numbers;
+
+
+for (var i=1;i<Math.max(numbers[0],numbers[1],numbers[2]);i=i+1){
+//console.log('Working with: ',i,num);
+div=true;
+for (var j=0;j<num.length;j=j+1){
+ //console.log('going for',num[j]);
+if (numbers[j]%i != 0){ div=false;  //console.log('OOps: ',num[j]);
+}
+
+}
+
+if (div){hdfn=i;}
+
+}
+return hdfn;
+
+}
+
+
+var Math2 = {
+    min: function(values) {
+        return this.calculate(values, Math.min);
+    },
+    max: function(values) {
+        return this.calculate(values, Math.max);
+    },
+    calculate: function(values, operation) {
+        if(values.length == 0) {
+            return NaN;
+        } else if(values.length == 1) {
+            var val = values.pop();
+            if ( typeof val == "number" ) {
+                return val;
+            } else {
+                return NaN;
+            }
+        } else {
+            var val = values.pop();
+            return operation(val, this.calculate(values, operation))
+        }
+    }
+}
+
+
+
+
+var debugaxis = function(axisLength){
+    //Shorten the vertex function
+    function v(x,y,z){ 
+            return new THREE.Vertex(new THREE.Vector3(x,y,z)); 
+    }
+    
+    //Create axis (point1, point2, colour)
+    function createAxis(p1, p2, color){
+            var line, lineGeometry = new THREE.Geometry(),
+            lineMat = new THREE.LineBasicMaterial({color: color, lineWidth: 1});
+            lineGeometry.vertices.push(p1, p2);
+            line = new THREE.Line(lineGeometry, lineMat);
+            scene.add(line);
+    }
+    
+    createAxis(v(-axisLength, 0, 0), v(axisLength, 0, 0), 0xFF0000);
+    createAxis(v(0, -axisLength, 0), v(0, axisLength, 0), 0x00FF00);
+    createAxis(v(0, 0, -axisLength), v(0, 0, axisLength), 0x0000FF);
+};
+
+
+function  generateCite(){
+generateCustomCite();
+document.getElementById('calcite').style.display='block';
+
+}
+
+
+
+
+
+function generateCustomCite()
+{
+if (true){
+var d = new Date();
+var n = d.getFullYear();
+var dt = new DateTime();
+document.getElementById('bibcite').innerHTML=document.title+"("+n+")" + '. [online] Available at <a href='+window.location.href.match(/^[^\#\?]+/)[0]+'>' +window.location.href.match(/^[^\#\?]+/)[0]+"</a> [ Accessed " + dt.formats.pretty.b.slice(5,dt.formats.pretty.b.length)+" ].";
+
+document.getElementById('plaincite').innerHTML=window.location.href.match(/^[^\#\?]+/)[0];
+
+}
+else{
+ansdiv=[];
+for (var i =0;i<divis.length;i=i+1){
+
+if (document.getElementById('but'+divis[i]).className !='LockedButton'){
+ansdiv.push(divis[i]);}}
+
+document.getElementById('bibcite').innerHTML= getcitechanged(ansdiv)[0];
+document.getElementById('plaincite').innerHTML= getcitechanged(ansdiv)[1];
+
+
+}}
+
+
+
+function getcitechanged(divs){
+code=window.location.href.match(/^[^\#\?]+/)[0] + '?'
+for (var i=0;i<divs.length;i=i+1){
+val=divs[i]+'_O';
+if (divs[i]=='Molecular_Weight'){val=val+'*1000'}
+code=code+divs[i]+'='+eval(val)+'&';
+}
+
+citeurl= code.slice(0,code.length-1);
+var d = new Date();
+var n = d.getFullYear();
+var dt = new DateTime();
+text=document.title+", ("+n+"). Calistry. [online] Available at: <a href="+citeurl+'>'+citeurl+"</a> [Accessed " + dt.formats.pretty.b.slice(5,dt.formats.pretty.b.length)+" ].";
+return [text,citeurl];
+}
+
+window.onresize = init;
+window.onload = init;
+try {init();} catch(err){}
+try {init();} catch(err){}
+</script>    </div>
+
+          <footer>
+              </footer>
+    
+        </div>
+
+  </div> <!-- /.block -->
+  <div id="block-block-20" class="widget block block-block" >
+  
+        
+  <div class = "block-content clearfix">
+    <div  class = 'tabs'>
+    <ul class = "nav nav-tabs">
+<li  class = 'active'><a href = "#tab-1" data-toggle = "tab"><i class = "fa fa-share-alt"></i>Share</a></li>
+<li ><a href = "#tab-2" data-toggle = "tab"><i class = "fa fa-quote-left"></i>Cite</a></li>
+<li ><a href = "#tab-3" data-toggle = "tab"><i class = "fa fa-comment"></i>Discuss</a></li>
+</ul>
+    <div class = "tab-content"><div class="tab-pane fade  active in" id="tab-1">
+<h2>	Share this calculator :</h2><p><a class="icon-facebook btn" target="_blank" id="sharefb" style=" background-color: rgb(19, 73, 171);margin-bottom:3px">&nbsp; &nbsp; facebook</a> <a target="_blank" class="icon-twitter btn" id="sharetw" style=" background-color: rgb(62, 173, 240);margin-bottom:3px">&nbsp; &nbsp; twitter</a> <a class="icon-google btn" id="sharegg" style=" background-color: rgb(205, 88, 67);margin-bottom:3px">&nbsp; &nbsp; Google +</a></p>
+</div><div class="tab-pane fade " id="tab-2">
+<p><a class="btn" onclick="generateCite()">Generate Citation</a></p><div id="calcite" style="display:none">	<b>Plain Url </b>	<p id="plaincite">&nbsp;</p>	<b><b><b>Bibliography </b></b></b>	<p id="bibcite">&nbsp;</p></div>
+</div><div class="tab-pane fade " id="tab-3">
+ 
+
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    /* * * CONFIGURATION VARIABLES * * */
+    var disqus_shortname = 'calistry';
+    
+    /* * * DON'T EDIT BELOW THIS LINE * * */
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
+
+</div></div>
+    <div class="clearfix"></div>
+    </div>
+   </div>
+
+  </div> <!-- /.block -->
+                
+                              </div>
+                                    
+          
+                                          <div  id="sidebar" class="col-md-3 sidebar">
+                              
+                                  <div id="block-block-11" class="widget block block-block " >
+  
+      <div class="title-box title-h3" >
+            <h3 class="title">Sponsorships</h3>
+          </div>
+  
+  <div class = "block-content clearfix">
+    <div><script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- topside -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7834311154944516"
+     data-ad-slot="7871947761"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+<br>
+<div>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- topside -->
+<ins class="adsbygoogle"
+     style="display:inline-block;width:300px;height:250px"
+     data-ad-client="ca-pub-7834311154944516"
+     data-ad-slot="7871947761"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>  </div>
+
+  </div> <!-- /.block -->
+                
+                              </div>
+                                    
+          
+                      
+          
+                      
+          
+                      
+          
+                      
+          
+                      
+          
+                      
+          
+                      
+          
+                      
+          
+                      
+          
+        </div>
+
+      </div>
+
+    
+      </div>
+    
+
+
+      <footer  class="nd-region footer-top">
+  
+       
+
+      <div class = "container">
+
+        <div  id="Footer-Top" class="row">     
+
+          
+                      
+          
+                      
+          
+                                          <aside  class="col-xs-12 col-sm-6 col-md-3 " id="block-7">
+                              
+                                  <div id="block-block-7" class="widget block block-block " >
+  
+      <div class="title-box title-h3" >
+            <h3 class="title">Follow Us</h3>
+          </div>
+  
+  <div class = "block-content clearfix">
+      <div id="block-fb-likebox-0" class="widget block block-fb-likebox" >
+  
+        
+  <div class = "block-content clearfix">
+    <div class="fb-page" data-href="https://www.facebook.com/Calistryweb?fref=ts" data-width="300" data-height="140" data-tabs="" data-hide-cover="0" data-show-facepile="0" data-hide-cta="false" data-small-header="false" data-adapt-container-width="true"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/Calistryweb?fref=ts"><a href="https://www.facebook.com/Calistryweb?fref=ts">Like us on Facebook</a></blockquote></div></div>  </div>
+
+  </div> <!-- /.block -->
+
+   </div>
+
+  </div> <!-- /.block -->
+                
+                              </aside>
+                                    
+          
+                                          <aside  class="col-xs-12 col-sm-6 col-md-3 hidden-submit" id="block-8">
+                              
+                                  <div id="block-block-8" class="widget block block-block " >
+  
+        
+  <div class = "block-content clearfix">
+    <div  style = 'margin-bottom: 10px;'><p><img alt="" src="http://calistry.org/New/sites/default/files/dreamstime_xl_51190236s_1.png" style="width:100%" title=""></p></div>
+<a  style = 'width:100%;' class = 'btn-danger sbtnf sbtnf-rounded sbtnf-icon-white sbtnf-icon-bg-black color' href = 'http://calistry.org/content/propose-idea'><i class = "fa fa-lightbulb-o"></i>&nbsp; 
+GIve us an Idea</a>
+   </div>
+
+  </div> <!-- /.block -->
+                
+                              </aside>
+                                    
+          
+                                          <aside  class="col-xs-12 col-sm-6 col-md-3 " id="block-9">
+                              
+                                  <div id="block-block-9" class="widget block block-block " >
+  
+        
+  <div class = "block-content clearfix">
+    <br>
+<div  class = 'caption'>
+    <img src="http://calistry.org/sites/default/files/cc.png"  alt="" title="">
+    <div class = "description">
+</div>
+  </div>
+<p style="text-align: justify;"><span style="font-size:14px;">This work is licensed under a <a href="http://creativecommons.org/licenses/by-nc-sa/4.0/" rel="license">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</span></p>
+   </div>
+
+  </div> <!-- /.block -->
+                
+                              </aside>
+                                    
+          
+                                          <aside  class="col-xs-12 col-sm-6 col-md-3 " id="block-10">
+                              
+                                  <div id="block-block-10" class="widget block block-block " >
+  
+        
+  <div class = "block-content clearfix">
+    <div  style = 'margin-left: 0px; margin-right: 0px; margin-top: 0px; margin-bottom: 0px;' class = 'caption'>
+    <img src="http://calistry.org/sites/default/files/android_apps.png"  alt="" title="">
+    <div class = "description">
+</div>
+  </div><a href="https://play.google.com/store/apps/developer?id=Calistry">
+<div  class = 'caption'>
+    <img src="http://calistry.org/sites/default/files/get%2Bit%2Bon%2Bgoogle%2Bplay.png" class="img-rounded" alt="" title="">
+    <div class = "description">
+</div>
+  </div></a>
+   </div>
+
+  </div> <!-- /.block -->
+                
+                              </aside>
+                                    
+          
+                      
+          
+                      
+          
+                      
+          
+                      
+          
+                      
+          
+        </div>
+
+      </div>
+
+    
+      </footer>
+    
+
+
+      <footer  class="nd-region footer-bottom">
+  
+       
+
+      <div class = "container">
+
+        <div  id="Footer-Bottom" class="row">     
+
+          
+                      
+          
+                      
+          
+                      
+          
+                      
+          
+                      
+          
+                      
+          
+                                          <div  class="col-md-12 " id="progressive_cms-footer_copyright">
+                              
+                                  <div id="block-progressive-cms-footer-copyright" class="widget block block-progressive-cms" >
+  
+        
+  <div class = "block-content clearfix">
+    <div class="row">
+  <div class="copyright col-xs-12 col-sm-3 col-md-3">
+    &copy; 2015 Calistry.org <a href='http://calistry.org/content/terms-and-conditions' style='float:right'> Terms and Condition</a>  </div>
+
+  <div class="phone col-xs-6 col-sm-3 col-md-3">
+          <div class="footer-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+          <path fill="#c6c6c6" d="M11.001,0H5C3.896,0,3,0.896,3,2c0,0.273,0,11.727,0,12c0,1.104,0.896,2,2,2h6c1.104,0,2-0.896,2-2
+           c0-0.273,0-11.727,0-12C13.001,0.896,12.105,0,11.001,0z M8,15c-0.552,0-1-0.447-1-1s0.448-1,1-1s1,0.447,1,1S8.553,15,8,15z
+          M11.001,12H5V2h6V12z"></path>
+        </svg>
+      </div>
+      <a href='https://play.google.com/store/apps/developer?id=Calistry'>Android Applications at Google Play</a> <br/>
+Proudly Made in India! 
+      </div>
+
+  <div class="address col-xs-6 col-sm-3 col-md-3">
+          <div class="footer-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="16px" height="16px" viewBox="0 0 16 16" enable-background="new 0 0 16 16" xml:space="preserve">
+          <g>
+          <g>
+            <path fill="#c6c6c6" d="M8,16c-0.256,0-0.512-0.098-0.707-0.293C7.077,15.491,2,10.364,2,6c0-3.309,2.691-6,6-6
+            c3.309,0,6,2.691,6,6c0,4.364-5.077,9.491-5.293,9.707C8.512,15.902,8.256,16,8,16z M8,2C5.795,2,4,3.794,4,6
+            c0,2.496,2.459,5.799,4,7.536c1.541-1.737,4-5.04,4-7.536C12.001,3.794,10.206,2,8,2z"></path>
+          </g>
+          <g>
+            <circle fill="#c6c6c6" cx="8.001" cy="6" r="2"></circle>
+          </g>
+          </g>
+        </svg>
+      </div>
+      Developed by, <a href="http://arkajitmandal.github.io/">Arkajit</a>, Arghya, Sucharita and Tarit, <br/> Maintained by, Rittik Mandal & Siddthartha Banerjee
+      </div>
+
+  <div class="col-xs-12 col-sm-3 col-md-3">
+    <a href="#" class="up">
+      <span class="glyphicon glyphicon-arrow-up"></span>
+    </a>
+  </div>
+</div>  </div>
+
+  </div> <!-- /.block -->
+                
+                              </div>
+                                    
+          
+                      
+          
+                      
+          
+                      
+          
+                      
+          
+        </div>
+
+      </div>
+
+    
+      </footer>
+    
+
+
+  </div>
+
+</div></div>  <script type="text/javascript" src="http://calistry.org/sites/all/modules/jquery_update/replace/jquery/1.7/jquery.min.js?v=1.7.2"></script>
+<script type="text/javascript" src="http://calistry.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://calistry.org/misc/drupal.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/modules/admin_menu/admin_devel/admin_devel.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/modules/pace/js/pace.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/modules/google_analytics/googleanalytics.js?penoy7"></script>
+<script type="text/javascript">
+// <!--//--><![CDATA[//><!--
+(function(i,s,o,g,r,a,m){i["GoogleAnalyticsObject"]=r;i[r]=i[r]||function(){(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create", "UA-34708501-2", {"cookieDomain":"auto"});ga("set", "anonymizeIp", true);ga("send", "pageview");
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://calistry.org/sites/all/modules/fb_likebox/fb_likebox.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/bootstrap.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/price-regulator/jshashtable-2.1_src.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/price-regulator/jquery.numberformatter-1.2.3.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/price-regulator/tmpl.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/price-regulator/jquery.dependClass-0.1.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/price-regulator/draggable-0.1.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/price-regulator/jquery.slider.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.carouFredSel-6.2.1-packed.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.touchSwipe.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.elevateZoom-3.0.8.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.imagesloaded.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.appear.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.sparkline.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.easypiechart.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.easing.1.3.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.fancybox.pack.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/isotope.pkgd.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/pixastic.custom.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.knob.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.stellar.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.selectBox.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.royalslider.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/jquery.tubular.1.0.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/country.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/spin.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/ladda.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/masonry.pkgd.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/morris.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/raphael.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/video.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/livicons-1.3.min.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/SmoothScroll.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/main.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/all/themes/progressive/js/drupal.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/default/files/cpn/calculator.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/default/files/cpn/block-20.js?penoy7"></script>
+<script type="text/javascript" src="http://calistry.org/sites/default/files/cpn/block-9.js?penoy7"></script>
+<script type="text/javascript">
+// <!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"progressive_sub","theme_token":"dcAuO6sCkt0dqCpt8Dl5RQIxA2zXoTHRCeo5pyCQiwQ","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/admin_menu\/admin_devel\/admin_devel.js":1,"sites\/all\/modules\/pace\/js\/pace.min.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"sites\/all\/modules\/fb_likebox\/fb_likebox.js":1,"sites\/all\/themes\/progressive\/js\/bootstrap.min.js":1,"sites\/all\/themes\/progressive\/js\/price-regulator\/jshashtable-2.1_src.js":1,"sites\/all\/themes\/progressive\/js\/price-regulator\/jquery.numberformatter-1.2.3.js":1,"sites\/all\/themes\/progressive\/js\/price-regulator\/tmpl.js":1,"sites\/all\/themes\/progressive\/js\/price-regulator\/jquery.dependClass-0.1.js":1,"sites\/all\/themes\/progressive\/js\/price-regulator\/draggable-0.1.js":1,"sites\/all\/themes\/progressive\/js\/price-regulator\/jquery.slider.js":1,"sites\/all\/themes\/progressive\/js\/jquery.carouFredSel-6.2.1-packed.js":1,"sites\/all\/themes\/progressive\/js\/jquery.touchSwipe.min.js":1,"sites\/all\/themes\/progressive\/js\/jquery.elevateZoom-3.0.8.min.js":1,"sites\/all\/themes\/progressive\/js\/jquery.imagesloaded.min.js":1,"sites\/all\/themes\/progressive\/js\/jquery.appear.js":1,"sites\/all\/themes\/progressive\/js\/jquery.sparkline.min.js":1,"sites\/all\/themes\/progressive\/js\/jquery.easypiechart.min.js":1,"sites\/all\/themes\/progressive\/js\/jquery.easing.1.3.js":1,"sites\/all\/themes\/progressive\/js\/jquery.fancybox.pack.js":1,"sites\/all\/themes\/progressive\/js\/isotope.pkgd.min.js":1,"sites\/all\/themes\/progressive\/js\/pixastic.custom.js":1,"sites\/all\/themes\/progressive\/js\/jquery.knob.js":1,"sites\/all\/themes\/progressive\/js\/jquery.stellar.min.js":1,"sites\/all\/themes\/progressive\/js\/jquery.selectBox.min.js":1,"sites\/all\/themes\/progressive\/js\/jquery.royalslider.min.js":1,"sites\/all\/themes\/progressive\/js\/jquery.tubular.1.0.js":1,"sites\/all\/themes\/progressive\/js\/country.js":1,"sites\/all\/themes\/progressive\/js\/spin.min.js":1,"sites\/all\/themes\/progressive\/js\/ladda.min.js":1,"sites\/all\/themes\/progressive\/js\/masonry.pkgd.min.js":1,"sites\/all\/themes\/progressive\/js\/morris.min.js":1,"sites\/all\/themes\/progressive\/js\/raphael.min.js":1,"sites\/all\/themes\/progressive\/js\/video.js":1,"sites\/all\/themes\/progressive\/js\/livicons-1.3.min.js":1,"sites\/all\/themes\/progressive\/js\/SmoothScroll.js":1,"sites\/all\/themes\/progressive\/js\/main.js":1,"sites\/all\/themes\/progressive\/js\/drupal.js":1,"public:\/\/cpn\/calculator.js":1,"public:\/\/cpn\/block-20.js":1,"public:\/\/cpn\/block-9.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/aggregator\/aggregator.css":1,"modules\/comment\/comment.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_popup\/themes\/datepicker.1.7.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/poll\/poll.css":1,"sites\/all\/modules\/ubercart\/uc_store\/uc_store.css":1,"modules\/user\/user.css":1,"modules\/forum\/forum.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/pace\/css\/pace-theme-loading-bar.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/progressive\/css\/buttons\/social-icons.css":1,"sites\/all\/themes\/progressive\/css\/buttons\/buttons.css":1,"sites\/all\/themes\/progressive\/css\/font-awesome.min.css":1,"sites\/all\/themes\/progressive\/css\/bootstrap.min.css":1,"sites\/all\/themes\/progressive\/css\/jslider.css":1,"sites\/all\/themes\/progressive\/css\/settings.css":1,"sites\/all\/themes\/progressive\/css\/jquery.fancybox.css":1,"sites\/all\/themes\/progressive\/css\/animate_progressive.css":1,"sites\/all\/themes\/progressive\/css\/video-js.min.css":1,"sites\/all\/themes\/progressive\/css\/morris.css":1,"sites\/all\/themes\/progressive\/css\/royalslider\/royalslider.css":1,"sites\/all\/themes\/progressive\/css\/royalslider\/skins\/minimal-white\/rs-minimal-white.css":1,"sites\/all\/themes\/progressive\/css\/layerslider\/layerslider.css":1,"sites\/all\/themes\/progressive\/css\/ladda.min.css":1,"sites\/all\/themes\/progressive\/css\/style.css":1,"sites\/all\/themes\/progressive\/css\/responsive.css":1,"sites\/all\/themes\/progressive\/css\/customizer\/pages.css":1,"sites\/all\/themes\/progressive\/css\/drupal.css":1,"sites\/all\/themes\/progressive\/css\/ie\/ie.css":1,"sites\/all\/themes\/progressive\/progressive_sub\/css\/custom.css":1,"sites\/all\/themes\/progressive\/css\/customizer\/pages-pages-customizer.css":1,"cpn_type_calculator":1,"public:\/\/cpn\/block-9.css":1,"public:\/\/cpn\/block-10.css":1}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"fb_likebox_app_id":"","fb_likebox_language":"en_EN","urlIsAjaxTrusted":{"\/calculate\/latticePlanesMillerIndices":true},"theme_path":"sites\/all\/themes\/progressive","progressive":{"mobile_menu_toggle":0},"ubercart_currency":"$"});
+// --><!]]>
+</script>
+  
+  
+</body>
+</html>
